@@ -1,0 +1,673 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7F8E719E28603DE50018EC07 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F8E719D28603DE50018EC07 /* AppDelegate.swift */; };
+		7F8E71A028603DE50018EC07 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F8E719F28603DE50018EC07 /* SceneDelegate.swift */; };
+		7F8E71A228603DE50018EC07 /* PersonnelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F8E71A128603DE50018EC07 /* PersonnelViewController.swift */; };
+		7F8E71A828603DE50018EC07 /* HogwartsPersonnel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7F8E71A628603DE50018EC07 /* HogwartsPersonnel.xcdatamodeld */; };
+		7F8E71AA28603DEB0018EC07 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7F8E71A928603DEB0018EC07 /* Assets.xcassets */; };
+		7F8E71AD28603DEB0018EC07 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7F8E71AB28603DEB0018EC07 /* LaunchScreen.storyboard */; };
+		7F8E71B828603DEC0018EC07 /* HogwartsPersonnelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F8E71B728603DEC0018EC07 /* HogwartsPersonnelTests.swift */; };
+		7F8E71C328603DEC0018EC07 /* HogwartsPersonnelUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F8E71C228603DEC0018EC07 /* HogwartsPersonnelUITests.swift */; };
+		7F8E71DD286040CD0018EC07 /* PersonnelContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F8E71DC286040CD0018EC07 /* PersonnelContract.swift */; };
+		7F8E71E228604D0C0018EC07 /* PersonnelPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F8E71E128604D0C0018EC07 /* PersonnelPresenter.swift */; };
+		7F8E71E7286057790018EC07 /* PersonnelInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F8E71E6286057790018EC07 /* PersonnelInteractor.swift */; };
+		7F8E71EC28605D7A0018EC07 /* PersonnelRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F8E71EB28605D7A0018EC07 /* PersonnelRouter.swift */; };
+		7F8E71F82860A10D0018EC07 /* HogwartsPersonnelService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F8E71F72860A10D0018EC07 /* HogwartsPersonnelService.swift */; };
+		7F8E71FD2860A4CC0018EC07 /* PersonnelModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F8E71FC2860A4CC0018EC07 /* PersonnelModel.swift */; };
+		7F8E72022860A5DE0018EC07 /* HogwartsPersonnelRepo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F8E72012860A5DE0018EC07 /* HogwartsPersonnelRepo.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7F8E71B428603DEC0018EC07 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7F8E719228603DE50018EC07 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7F8E719928603DE50018EC07;
+			remoteInfo = HogwartsPersonnel;
+		};
+		7F8E71BF28603DEC0018EC07 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7F8E719228603DE50018EC07 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7F8E719928603DE50018EC07;
+			remoteInfo = HogwartsPersonnel;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		7F8E719A28603DE50018EC07 /* HogwartsPersonnel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HogwartsPersonnel.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7F8E719D28603DE50018EC07 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		7F8E719F28603DE50018EC07 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		7F8E71A128603DE50018EC07 /* PersonnelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonnelViewController.swift; sourceTree = "<group>"; };
+		7F8E71A728603DE50018EC07 /* HogwartsPersonnel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = HogwartsPersonnel.xcdatamodel; sourceTree = "<group>"; };
+		7F8E71A928603DEB0018EC07 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7F8E71AC28603DEB0018EC07 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		7F8E71AE28603DEB0018EC07 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7F8E71B328603DEC0018EC07 /* HogwartsPersonnelTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HogwartsPersonnelTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7F8E71B728603DEC0018EC07 /* HogwartsPersonnelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HogwartsPersonnelTests.swift; sourceTree = "<group>"; };
+		7F8E71B928603DEC0018EC07 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7F8E71BE28603DEC0018EC07 /* HogwartsPersonnelUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HogwartsPersonnelUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7F8E71C228603DEC0018EC07 /* HogwartsPersonnelUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HogwartsPersonnelUITests.swift; sourceTree = "<group>"; };
+		7F8E71C428603DEC0018EC07 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7F8E71DC286040CD0018EC07 /* PersonnelContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonnelContract.swift; sourceTree = "<group>"; };
+		7F8E71E128604D0C0018EC07 /* PersonnelPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonnelPresenter.swift; sourceTree = "<group>"; };
+		7F8E71E6286057790018EC07 /* PersonnelInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonnelInteractor.swift; sourceTree = "<group>"; };
+		7F8E71EB28605D7A0018EC07 /* PersonnelRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonnelRouter.swift; sourceTree = "<group>"; };
+		7F8E71F72860A10D0018EC07 /* HogwartsPersonnelService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HogwartsPersonnelService.swift; sourceTree = "<group>"; };
+		7F8E71FC2860A4CC0018EC07 /* PersonnelModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonnelModel.swift; sourceTree = "<group>"; };
+		7F8E72012860A5DE0018EC07 /* HogwartsPersonnelRepo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HogwartsPersonnelRepo.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7F8E719728603DE50018EC07 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7F8E71B028603DEC0018EC07 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7F8E71BB28603DEC0018EC07 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7F8E719128603DE50018EC07 = {
+			isa = PBXGroup;
+			children = (
+				7F8E719C28603DE50018EC07 /* HogwartsPersonnel */,
+				7F8E71B628603DEC0018EC07 /* HogwartsPersonnelTests */,
+				7F8E71C128603DEC0018EC07 /* HogwartsPersonnelUITests */,
+				7F8E719B28603DE50018EC07 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7F8E719B28603DE50018EC07 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7F8E719A28603DE50018EC07 /* HogwartsPersonnel.app */,
+				7F8E71B328603DEC0018EC07 /* HogwartsPersonnelTests.xctest */,
+				7F8E71BE28603DEC0018EC07 /* HogwartsPersonnelUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7F8E719C28603DE50018EC07 /* HogwartsPersonnel */ = {
+			isa = PBXGroup;
+			children = (
+				7F8E720D2862F14F0018EC07 /* Application */,
+				7F8E72112862F1F20018EC07 /* Resources */,
+				7F8E72122862F2000018EC07 /* SupportingFiles */,
+				7F8E71A628603DE50018EC07 /* HogwartsPersonnel.xcdatamodeld */,
+			);
+			path = HogwartsPersonnel;
+			sourceTree = "<group>";
+		};
+		7F8E71B628603DEC0018EC07 /* HogwartsPersonnelTests */ = {
+			isa = PBXGroup;
+			children = (
+				7F8E71B728603DEC0018EC07 /* HogwartsPersonnelTests.swift */,
+				7F8E71B928603DEC0018EC07 /* Info.plist */,
+			);
+			path = HogwartsPersonnelTests;
+			sourceTree = "<group>";
+		};
+		7F8E71C128603DEC0018EC07 /* HogwartsPersonnelUITests */ = {
+			isa = PBXGroup;
+			children = (
+				7F8E71C228603DEC0018EC07 /* HogwartsPersonnelUITests.swift */,
+				7F8E71C428603DEC0018EC07 /* Info.plist */,
+			);
+			path = HogwartsPersonnelUITests;
+			sourceTree = "<group>";
+		};
+		7F8E71F028605D9C0018EC07 /* PersonnelModule */ = {
+			isa = PBXGroup;
+			children = (
+				7F8E71A128603DE50018EC07 /* PersonnelViewController.swift */,
+				7F8E71DC286040CD0018EC07 /* PersonnelContract.swift */,
+				7F8E71EB28605D7A0018EC07 /* PersonnelRouter.swift */,
+				7F8E71E6286057790018EC07 /* PersonnelInteractor.swift */,
+				7F8E71E128604D0C0018EC07 /* PersonnelPresenter.swift */,
+				7F8E71FC2860A4CC0018EC07 /* PersonnelModel.swift */,
+			);
+			path = PersonnelModule;
+			sourceTree = "<group>";
+		};
+		7F8E72062862F12A0018EC07 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				7F8E71F72860A10D0018EC07 /* HogwartsPersonnelService.swift */,
+				7F8E72012860A5DE0018EC07 /* HogwartsPersonnelRepo.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		7F8E720D2862F14F0018EC07 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				7F8E719D28603DE50018EC07 /* AppDelegate.swift */,
+				7F8E719F28603DE50018EC07 /* SceneDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		7F8E72112862F1F20018EC07 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				7F8E71A928603DEB0018EC07 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		7F8E72122862F2000018EC07 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				7F8E72062862F12A0018EC07 /* Service */,
+				7F8E71F028605D9C0018EC07 /* PersonnelModule */,
+				7F8E71AB28603DEB0018EC07 /* LaunchScreen.storyboard */,
+				7F8E71AE28603DEB0018EC07 /* Info.plist */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7F8E719928603DE50018EC07 /* HogwartsPersonnel */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7F8E71C728603DEC0018EC07 /* Build configuration list for PBXNativeTarget "HogwartsPersonnel" */;
+			buildPhases = (
+				7F8E719628603DE50018EC07 /* Sources */,
+				7F8E719728603DE50018EC07 /* Frameworks */,
+				7F8E719828603DE50018EC07 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HogwartsPersonnel;
+			productName = HogwartsPersonnel;
+			productReference = 7F8E719A28603DE50018EC07 /* HogwartsPersonnel.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7F8E71B228603DEC0018EC07 /* HogwartsPersonnelTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7F8E71CA28603DEC0018EC07 /* Build configuration list for PBXNativeTarget "HogwartsPersonnelTests" */;
+			buildPhases = (
+				7F8E71AF28603DEC0018EC07 /* Sources */,
+				7F8E71B028603DEC0018EC07 /* Frameworks */,
+				7F8E71B128603DEC0018EC07 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7F8E71B528603DEC0018EC07 /* PBXTargetDependency */,
+			);
+			name = HogwartsPersonnelTests;
+			productName = HogwartsPersonnelTests;
+			productReference = 7F8E71B328603DEC0018EC07 /* HogwartsPersonnelTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		7F8E71BD28603DEC0018EC07 /* HogwartsPersonnelUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7F8E71CD28603DEC0018EC07 /* Build configuration list for PBXNativeTarget "HogwartsPersonnelUITests" */;
+			buildPhases = (
+				7F8E71BA28603DEC0018EC07 /* Sources */,
+				7F8E71BB28603DEC0018EC07 /* Frameworks */,
+				7F8E71BC28603DEC0018EC07 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7F8E71C028603DEC0018EC07 /* PBXTargetDependency */,
+			);
+			name = HogwartsPersonnelUITests;
+			productName = HogwartsPersonnelUITests;
+			productReference = 7F8E71BE28603DEC0018EC07 /* HogwartsPersonnelUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7F8E719228603DE50018EC07 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					7F8E719928603DE50018EC07 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					7F8E71B228603DEC0018EC07 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 7F8E719928603DE50018EC07;
+					};
+					7F8E71BD28603DEC0018EC07 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 7F8E719928603DE50018EC07;
+					};
+				};
+			};
+			buildConfigurationList = 7F8E719528603DE50018EC07 /* Build configuration list for PBXProject "HogwartsPersonnel" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7F8E719128603DE50018EC07;
+			productRefGroup = 7F8E719B28603DE50018EC07 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7F8E719928603DE50018EC07 /* HogwartsPersonnel */,
+				7F8E71B228603DEC0018EC07 /* HogwartsPersonnelTests */,
+				7F8E71BD28603DEC0018EC07 /* HogwartsPersonnelUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7F8E719828603DE50018EC07 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7F8E71AD28603DEB0018EC07 /* LaunchScreen.storyboard in Resources */,
+				7F8E71AA28603DEB0018EC07 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7F8E71B128603DEC0018EC07 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7F8E71BC28603DEC0018EC07 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7F8E719628603DE50018EC07 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7F8E71A228603DE50018EC07 /* PersonnelViewController.swift in Sources */,
+				7F8E719E28603DE50018EC07 /* AppDelegate.swift in Sources */,
+				7F8E71E7286057790018EC07 /* PersonnelInteractor.swift in Sources */,
+				7F8E71A028603DE50018EC07 /* SceneDelegate.swift in Sources */,
+				7F8E71F82860A10D0018EC07 /* HogwartsPersonnelService.swift in Sources */,
+				7F8E71DD286040CD0018EC07 /* PersonnelContract.swift in Sources */,
+				7F8E71FD2860A4CC0018EC07 /* PersonnelModel.swift in Sources */,
+				7F8E71A828603DE50018EC07 /* HogwartsPersonnel.xcdatamodeld in Sources */,
+				7F8E71E228604D0C0018EC07 /* PersonnelPresenter.swift in Sources */,
+				7F8E71EC28605D7A0018EC07 /* PersonnelRouter.swift in Sources */,
+				7F8E72022860A5DE0018EC07 /* HogwartsPersonnelRepo.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7F8E71AF28603DEC0018EC07 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7F8E71B828603DEC0018EC07 /* HogwartsPersonnelTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7F8E71BA28603DEC0018EC07 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7F8E71C328603DEC0018EC07 /* HogwartsPersonnelUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7F8E71B528603DEC0018EC07 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7F8E719928603DE50018EC07 /* HogwartsPersonnel */;
+			targetProxy = 7F8E71B428603DEC0018EC07 /* PBXContainerItemProxy */;
+		};
+		7F8E71C028603DEC0018EC07 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7F8E719928603DE50018EC07 /* HogwartsPersonnel */;
+			targetProxy = 7F8E71BF28603DEC0018EC07 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		7F8E71AB28603DEB0018EC07 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7F8E71AC28603DEB0018EC07 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7F8E71C528603DEC0018EC07 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		7F8E71C628603DEC0018EC07 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7F8E71C828603DEC0018EC07 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Z4P2SA89UW;
+				INFOPLIST_FILE = HogwartsPersonnel/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.prabh.HogwartsPersonnel;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7F8E71C928603DEC0018EC07 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Z4P2SA89UW;
+				INFOPLIST_FILE = HogwartsPersonnel/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.prabh.HogwartsPersonnel;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		7F8E71CB28603DEC0018EC07 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Z4P2SA89UW;
+				INFOPLIST_FILE = HogwartsPersonnelTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.prabh.HogwartsPersonnelTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HogwartsPersonnel.app/HogwartsPersonnel";
+			};
+			name = Debug;
+		};
+		7F8E71CC28603DEC0018EC07 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Z4P2SA89UW;
+				INFOPLIST_FILE = HogwartsPersonnelTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.prabh.HogwartsPersonnelTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HogwartsPersonnel.app/HogwartsPersonnel";
+			};
+			name = Release;
+		};
+		7F8E71CE28603DEC0018EC07 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Z4P2SA89UW;
+				INFOPLIST_FILE = HogwartsPersonnelUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.prabh.HogwartsPersonnelUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = HogwartsPersonnel;
+			};
+			name = Debug;
+		};
+		7F8E71CF28603DEC0018EC07 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Z4P2SA89UW;
+				INFOPLIST_FILE = HogwartsPersonnelUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.prabh.HogwartsPersonnelUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = HogwartsPersonnel;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7F8E719528603DE50018EC07 /* Build configuration list for PBXProject "HogwartsPersonnel" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7F8E71C528603DEC0018EC07 /* Debug */,
+				7F8E71C628603DEC0018EC07 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7F8E71C728603DEC0018EC07 /* Build configuration list for PBXNativeTarget "HogwartsPersonnel" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7F8E71C828603DEC0018EC07 /* Debug */,
+				7F8E71C928603DEC0018EC07 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7F8E71CA28603DEC0018EC07 /* Build configuration list for PBXNativeTarget "HogwartsPersonnelTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7F8E71CB28603DEC0018EC07 /* Debug */,
+				7F8E71CC28603DEC0018EC07 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7F8E71CD28603DEC0018EC07 /* Build configuration list for PBXNativeTarget "HogwartsPersonnelUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7F8E71CE28603DEC0018EC07 /* Debug */,
+				7F8E71CF28603DEC0018EC07 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		7F8E71A628603DE50018EC07 /* HogwartsPersonnel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				7F8E71A728603DE50018EC07 /* HogwartsPersonnel.xcdatamodel */,
+			);
+			currentVersion = 7F8E71A728603DE50018EC07 /* HogwartsPersonnel.xcdatamodel */;
+			path = HogwartsPersonnel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 7F8E719228603DE50018EC07 /* Project object */;
+}
