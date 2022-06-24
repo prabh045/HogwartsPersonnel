@@ -66,5 +66,9 @@ extension PersonnelViewController: UITableViewDataSource, UITableViewDelegate {
         cell.textLabel?.text = presenter.personnel(at: indexPath.row)
         return cell
     }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        presenter?.didSelectRow(at: indexPath.row)
+    }
 }
 

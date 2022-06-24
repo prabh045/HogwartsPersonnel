@@ -22,6 +22,12 @@
 		7F8E71F82860A10D0018EC07 /* HogwartsPersonnelService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F8E71F72860A10D0018EC07 /* HogwartsPersonnelService.swift */; };
 		7F8E71FD2860A4CC0018EC07 /* PersonnelModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F8E71FC2860A4CC0018EC07 /* PersonnelModel.swift */; };
 		7F8E72022860A5DE0018EC07 /* HogwartsPersonnelRepo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F8E72012860A5DE0018EC07 /* HogwartsPersonnelRepo.swift */; };
+		7F8E721A2862FABD0018EC07 /* PersonnelDetailContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F8E72192862FABD0018EC07 /* PersonnelDetailContract.swift */; };
+		7F8E721F286303050018EC07 /* DetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F8E721E286303050018EC07 /* DetailPresenter.swift */; };
+		7F8E7227286303390018EC07 /* DetailInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F8E7226286303390018EC07 /* DetailInteractor.swift */; };
+		7F8E72382863044F0018EC07 /* PersonnelDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F8E72372863044F0018EC07 /* PersonnelDetailViewController.swift */; };
+		7F8E7240286309130018EC07 /* ImageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F8E723F286309130018EC07 /* ImageService.swift */; };
+		7F8E7245286459410018EC07 /* PersonnelDetailRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F8E7244286459410018EC07 /* PersonnelDetailRouter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +69,12 @@
 		7F8E71F72860A10D0018EC07 /* HogwartsPersonnelService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HogwartsPersonnelService.swift; sourceTree = "<group>"; };
 		7F8E71FC2860A4CC0018EC07 /* PersonnelModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonnelModel.swift; sourceTree = "<group>"; };
 		7F8E72012860A5DE0018EC07 /* HogwartsPersonnelRepo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HogwartsPersonnelRepo.swift; sourceTree = "<group>"; };
+		7F8E72192862FABD0018EC07 /* PersonnelDetailContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonnelDetailContract.swift; sourceTree = "<group>"; };
+		7F8E721E286303050018EC07 /* DetailPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailPresenter.swift; sourceTree = "<group>"; };
+		7F8E7226286303390018EC07 /* DetailInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailInteractor.swift; sourceTree = "<group>"; };
+		7F8E72372863044F0018EC07 /* PersonnelDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonnelDetailViewController.swift; sourceTree = "<group>"; };
+		7F8E723F286309130018EC07 /* ImageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageService.swift; sourceTree = "<group>"; };
+		7F8E7244286459410018EC07 /* PersonnelDetailRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonnelDetailRouter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,10 +125,13 @@
 		7F8E719C28603DE50018EC07 /* HogwartsPersonnel */ = {
 			isa = PBXGroup;
 			children = (
+				7F8E72062862F12A0018EC07 /* Service */,
+				7F8E71F028605D9C0018EC07 /* PersonnelModule */,
 				7F8E720D2862F14F0018EC07 /* Application */,
 				7F8E72112862F1F20018EC07 /* Resources */,
 				7F8E72122862F2000018EC07 /* SupportingFiles */,
 				7F8E71A628603DE50018EC07 /* HogwartsPersonnel.xcdatamodeld */,
+				7F8E7230286303650018EC07 /* PersonnelDetailModule */,
 			);
 			path = HogwartsPersonnel;
 			sourceTree = "<group>";
@@ -157,6 +172,7 @@
 			children = (
 				7F8E71F72860A10D0018EC07 /* HogwartsPersonnelService.swift */,
 				7F8E72012860A5DE0018EC07 /* HogwartsPersonnelRepo.swift */,
+				7F8E723F286309130018EC07 /* ImageService.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -181,12 +197,22 @@
 		7F8E72122862F2000018EC07 /* SupportingFiles */ = {
 			isa = PBXGroup;
 			children = (
-				7F8E72062862F12A0018EC07 /* Service */,
-				7F8E71F028605D9C0018EC07 /* PersonnelModule */,
 				7F8E71AB28603DEB0018EC07 /* LaunchScreen.storyboard */,
 				7F8E71AE28603DEB0018EC07 /* Info.plist */,
 			);
 			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		7F8E7230286303650018EC07 /* PersonnelDetailModule */ = {
+			isa = PBXGroup;
+			children = (
+				7F8E721E286303050018EC07 /* DetailPresenter.swift */,
+				7F8E72192862FABD0018EC07 /* PersonnelDetailContract.swift */,
+				7F8E7226286303390018EC07 /* DetailInteractor.swift */,
+				7F8E72372863044F0018EC07 /* PersonnelDetailViewController.swift */,
+				7F8E7244286459410018EC07 /* PersonnelDetailRouter.swift */,
+			);
+			path = PersonnelDetailModule;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -319,16 +345,22 @@
 			buildActionMask = 2147483647;
 			files = (
 				7F8E71A228603DE50018EC07 /* PersonnelViewController.swift in Sources */,
+				7F8E7240286309130018EC07 /* ImageService.swift in Sources */,
 				7F8E719E28603DE50018EC07 /* AppDelegate.swift in Sources */,
 				7F8E71E7286057790018EC07 /* PersonnelInteractor.swift in Sources */,
 				7F8E71A028603DE50018EC07 /* SceneDelegate.swift in Sources */,
+				7F8E7245286459410018EC07 /* PersonnelDetailRouter.swift in Sources */,
+				7F8E72382863044F0018EC07 /* PersonnelDetailViewController.swift in Sources */,
 				7F8E71F82860A10D0018EC07 /* HogwartsPersonnelService.swift in Sources */,
 				7F8E71DD286040CD0018EC07 /* PersonnelContract.swift in Sources */,
 				7F8E71FD2860A4CC0018EC07 /* PersonnelModel.swift in Sources */,
 				7F8E71A828603DE50018EC07 /* HogwartsPersonnel.xcdatamodeld in Sources */,
 				7F8E71E228604D0C0018EC07 /* PersonnelPresenter.swift in Sources */,
 				7F8E71EC28605D7A0018EC07 /* PersonnelRouter.swift in Sources */,
+				7F8E721F286303050018EC07 /* DetailPresenter.swift in Sources */,
+				7F8E7227286303390018EC07 /* DetailInteractor.swift in Sources */,
 				7F8E72022860A5DE0018EC07 /* HogwartsPersonnelRepo.swift in Sources */,
+				7F8E721A2862FABD0018EC07 /* PersonnelDetailContract.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -498,7 +530,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Z4P2SA89UW;
-				INFOPLIST_FILE = HogwartsPersonnel/Info.plist;
+				INFOPLIST_FILE = HogwartsPersonnel/SupportingFiles/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -518,7 +550,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Z4P2SA89UW;
-				INFOPLIST_FILE = HogwartsPersonnel/Info.plist;
+				INFOPLIST_FILE = HogwartsPersonnel/SupportingFiles/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

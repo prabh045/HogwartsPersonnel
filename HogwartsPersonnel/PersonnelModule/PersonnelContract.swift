@@ -13,6 +13,7 @@ protocol ViewToPresenterPersonnelDelegate: AnyObject {
     var interactor: PresenterToInteractorPersonnelDelegate? { get set }
     var router: PresenterToRouterPersonnelDelegate? { get set }
     func viewDidLoad()
+    func didSelectRow(at index: Int)
 }
 
 //MARK: Presenter Contracts
@@ -29,6 +30,7 @@ protocol PresenterToInteractorPersonnelDelegate: AnyObject {
 //Presenter -> Router (Presenter output to router)
 protocol PresenterToRouterPersonnelDelegate: AnyObject {
     func startModule() -> UINavigationController
+    func openDetailVc(on vc: PresenterToViewPersonnelDelegate, imageUrl: String)
 }
 
 //MARK: Interactor Contracts

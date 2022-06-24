@@ -8,12 +8,21 @@
 import Foundation
 
 class PersonnelPresenter: ViewToPresenterPersonnelDelegate {
+    //MARK: Protocol confirmance
     weak var personnelView: PresenterToViewPersonnelDelegate?
     var interactor: PresenterToInteractorPersonnelDelegate?
     var router: PresenterToRouterPersonnelDelegate?
     func viewDidLoad() {
         interactor?.fetchHogwartsPersonnel()
     }
+    func didSelectRow(at index: Int) {
+        guard let personnelView = personnelView else {
+            return
+        }
+        let imageUrl = personnel[index].image
+        router?.openDetailVc(on: personnelView, imageUrl: imageUrl)
+    }
+    //MARK: Properties
     private var personnel = [PersonnelModel]()
     func personnel(at index: Int) -> String {
         return personnel[index].name

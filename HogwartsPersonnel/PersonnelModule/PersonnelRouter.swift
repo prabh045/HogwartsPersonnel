@@ -7,10 +7,11 @@
 
 import UIKit
 
-class PersonnelRouter: PresenterToRouterPersonnelDelegate {    
+class PersonnelRouter: PresenterToRouterPersonnelDelegate {
      func startModule() -> UINavigationController {
         let vc = PersonnelViewController()
         let navVc = UINavigationController(rootViewController: vc)
+        vc.navigationItem.title = "Hogwarts Personnel"
         let presenter: ViewToPresenterPersonnelDelegate & InteractorToPresenterDelegate = PersonnelPresenter()
         presenter.interactor = PersonnelInteractor(service: HogwartsPersonnelService())
         presenter.interactor?.presenter = presenter
@@ -18,5 +19,10 @@ class PersonnelRouter: PresenterToRouterPersonnelDelegate {
         presenter.personnelView = vc
         vc.presenter = presenter
         return navVc
+    }
+    func openDetailVc(on vc: PresenterToViewPersonnelDelegate, imageUrl: String) {
+        let personnelVc = vc as? PersonnelViewController
+        let detailVc = PersonnelDetailRouter().createModule(imageURL: imageUrl)
+        personnelVc?.navigationController?.pushViewController(detailVc, animated: true)
     }
 }
