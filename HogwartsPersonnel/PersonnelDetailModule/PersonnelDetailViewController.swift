@@ -23,6 +23,7 @@ class PersonnelDetailViewController: UIViewController {
     }
     
     private func setupView() {
+        view.backgroundColor = .white
         view.addSubview(characterImageView)
         NSLayoutConstraint.activate([
             characterImageView.centerXAnchor.constraint(equalTo: view.centerXAnchor),

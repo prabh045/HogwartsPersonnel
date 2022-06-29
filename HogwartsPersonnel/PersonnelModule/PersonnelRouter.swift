@@ -15,7 +15,7 @@ class PersonnelRouter: PresenterToRouterPersonnelDelegate {
         let presenter: ViewToPresenterPersonnelDelegate & InteractorToPresenterDelegate = PersonnelPresenter()
         presenter.interactor = PersonnelInteractor(service: HogwartsPersonnelService())
         presenter.interactor?.presenter = presenter
-        presenter.router = PersonnelRouter()
+        presenter.router = self
         presenter.personnelView = vc
         vc.presenter = presenter
         return navVc
